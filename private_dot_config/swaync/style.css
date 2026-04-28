@@ -1,0 +1,128 @@
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.blank-window {
+    background: alpha(#111111, 0.3);
+}
+
+.control-center {
+    background-color: alpha(#111111, 0.92);
+    border: 1px solid rgba(200, 200, 200, 0.15);
+    border-radius: 12px;
+    padding: 12px;
+    color: #cccccc;
+}
+
+.notification-row {
+    outline: none;
+    margin: 6px 0;
+}
+
+.notification {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(200, 200, 200, 0.15);
+    border-radius: 8px;
+    padding: 14px;
+    color: #cccccc;
+}
+
+.notification:hover {
+    background-color: rgba(68, 68, 68, 0.6);
+}
+
+.notification-group {
+    margin: 4px 0;
+}
+
+.notification-group-headers {
+    color: #888888;
+    font-size: 11px;
+    padding: 4px 8px;
+}
+
+.notification-group-icon {
+    color: #888888;
+}
+
+.close-button {
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: #888888;
+    padding: 4px 10px;
+}
+
+.close-button:hover {
+    background-color: rgba(200, 200, 200, 0.1);
+    color: #cccccc;
+}
+
+.notification-default-action {
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    color: #cccccc;
+}
+
+.notification-default-action:hover {
+    background-color: rgba(200, 200, 200, 0.05);
+}
+
+.notification-action {
+    background-color: rgba(68, 68, 68, 0.4);
+    border: 1px solid rgba(200, 200, 200, 0.1);
+    border-radius: 8px;
+    color: #cccccc;
+    padding: 6px 14px;
+    margin: 2px;
+}
+
+.notification-action:hover {
+    background-color: rgba(136, 136, 136, 0.4);
+    color: #eeeeee;
+}
+
+.notification-icon {
+    margin-right: 14px;
+}
+
+.summary {
+    color: #eeeeee;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.body {
+    color: #cccccc;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.time {
+    color: #888888;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.urgency-low {
+    border-left: 2px solid #444444;
+}
+
+.urgency-normal {
+    border-left: 2px solid #888888;
+}
+
+.urgency-critical {
+    border-left: 2px solid #cccccc;
+}
+
+#label-count {
+    color: #888888;
+    font-size: 11px;
+    padding: 2px 4px;
+}
