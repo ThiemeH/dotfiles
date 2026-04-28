@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(nix-channel --list)",
+      "Read(//nix/var/nix/profiles/per-user/**)"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:nix-community.github.io)",
+      "WebFetch(domain:github.com)",
+      "Read(//nix/store/llbjgq1r5rrfcnmns9gfirym01x3gsxi-user-environment/**)",
+      "Read(//nix/store/826zssjlip5m4k4kk0b0izx38m0jjcwg-user-environment/**)"
+    ]
+  }
+}

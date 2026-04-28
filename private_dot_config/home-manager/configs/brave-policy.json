@@ -1,0 +1,12 @@
+{
+  "BraveRewardsDisabled": true,
+  "BraveWalletDisabled": true,
+  "BraveTalkDisabled": true,
+  "BraveVPNDisabled": true,
+  "BraveNewsDisabled": true,
+  "BraveStatsPingEnabled": false,
+  "BraveP3AEnabled": false,
+  "DefaultSearchProviderEnabled": true,
+  "DefaultSearchProviderName": "Google",
+  "DefaultSearchProviderSearchURL": "https://www.google.com/search?q={searchTerms}"
+}
