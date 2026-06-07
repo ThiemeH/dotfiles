@@ -66,6 +66,10 @@ layout {
 
 spawn-at-startup "waybar"
 spawn-at-startup "xwayland-satellite"
+// Services
+spawn-at-startup "swaync"
+spawn-at-startup "gammastep"
+spawn-at-startup "awww-daemon"
 hotkey-overlay {
     skip-at-startup
 }
