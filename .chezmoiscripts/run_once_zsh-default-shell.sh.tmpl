@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# chezmoi:shell
+
+if [ -f /etc/fedora-release ]; then
+  sudo dnf install -y zsh
+  chsh -s "$(which zsh)"
+else
+  echo "Zsh must be installed manually. After installing, run: chsh -s \$(which zsh)"
+fi
