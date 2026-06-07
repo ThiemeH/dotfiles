@@ -3,7 +3,6 @@
 {
   programs.waybar.enable = true;
   services.swaync.enable = true;
-  programs.swaylock.enable = true;
   services.swayidle.enable = true;
   services.awww.enable = true;
   services.gammastep = {
