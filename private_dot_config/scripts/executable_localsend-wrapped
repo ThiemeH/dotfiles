@@ -1,8 +1,0 @@
-#!/bin/bash
-sudo ufw allow 53317/tcp > /dev/null
-sudo ufw allow 53317/udp > /dev/null
-
-localsend "$@"
-
-sudo ufw delete allow 53317/tcp > /dev/null
-sudo ufw delete allow 53317/udp > /dev/null
