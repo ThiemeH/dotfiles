@@ -107,7 +107,7 @@ window-rule {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+T { spawn "alacritty"; }
-    Mod+B { spawn-sh "flatpak run com.brave.Browser"; }
+    Mod+B { spawn "brave"; }
     Mod+M { spawn-sh "flatpak run com.brave.Browser --app-id=\"pjibgclleladliembfgfagdaldikeohf\""; }
     Mod+D { spawn "fuzzel"; }
     Super+Alt+L { spawn "swaylock"; }
