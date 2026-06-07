@@ -8,18 +8,8 @@
     ],
     "modules-right": [
         "group/tray-drawer",
-        // "bluetooth",
-        "pulseaudio",
         "battery"
     ],
-    // "bluetooth": {
-    //     "format": "{icon}",
-    //     "format-disabled": "󰂲",
-    //     "format-on": "󰂯",
-    //     "format-connected": "󰂱",
-    //     "tooltip": true,
-    //     "on-click": "blueman-manager & sleep 1 && pkill blueman-tray"
-    // },
     "battery": {
         "states": {
             "warning": 30,
@@ -40,20 +30,6 @@
         "tooltip-format": "{time}",
         "interval": 30,
         "cursor": false
-    },
-    "pulseaudio": {
-        "format": "{icon}",
-        "format-muted": "%",
-        "format-bluetooth": "󰂯%",
-        "format-bluetooth-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "headset": "",
-            "default": [
-                ""
-            ]
-        },
-        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
     },
     "group/tray-drawer": {
         "orientation": "inherit",
