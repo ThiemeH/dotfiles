@@ -5,7 +5,12 @@
 {{ if not (lookPath "nix") -}}
 {{   if not (lookPath (joinPath .chezmoi.homeDir ".local/bin/nix")) -}}
 echo "Installing nix..."
+{{ if lookPath "/etc/fedora-release" -}}
+sudo dnf install nix nix-daemon
+sudo systemctl enable --now nix-daemon
+{{ else -}}
 sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --daemon
+{{ end -}}
 {{   end -}}
 {{ end -}}
 
