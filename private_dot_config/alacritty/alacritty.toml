@@ -1,0 +1,17 @@
+[general]
+import = ["~/.config/alacritty/themes/noctalia.toml"]
+live_config_reload = true
+
+[window]
+decorations = "none"
+padding = { x = 9, y = 9 }
+
+[font]
+normal = {
+  family = "JetBrainsMonoNerdFont", style = "Bold"
+}
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"
