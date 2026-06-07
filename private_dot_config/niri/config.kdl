@@ -22,6 +22,16 @@ gestures {
     off
   }
 }
+output "hdmi-a-1" {
+  position x=0 y=360
+}
+output "dp-2" {
+  focus-at-startup
+  position x=1920 y=0
+}
+output "hdmi-a-2" {
+  position x=4480 y=360
+}
 layout {
     gaps 10
     center-focused-column "never"
@@ -53,13 +63,9 @@ layout {
     struts {
     }
 }
-spawn-sh-at-startup "awww-daemon & awww clear && sleep 2 && awww img ~/Pictures/Wallpapers/yoru.jpg --transition-type fade"
+
 spawn-at-startup "waybar"
-spawn-sh-at-startup "gammastep -l 52.37:4.90 -t 6500:1500"
-spawn-at-startup "swaync"
 spawn-at-startup "xwayland-satellite"
-spawn-at-startup "aw-qt"
-spawn-sh-at-startup "swayidle -w before-sleep 'loginctl lock-session $XDG_SESSION_ID' lock 'playerctl -a pause && swaylock'"
 hotkey-overlay {
     skip-at-startup
 }
@@ -76,6 +82,7 @@ window-rule {
 }
 window-rule {
     geometry-corner-radius 12
+    open-maximized true
     clip-to-geometry true
     opacity 0.8
     background-effect {
@@ -89,10 +96,8 @@ window-rule {
   opacity 0.9
 }
 window-rule {
-    match app-id="brave-pliiebkcmokkgndfalahlmimanmbjlab-Default"
-    match app-id="brave-pjibgclleladliembfgfagdaldikeohf-Default"
-    match app-id="VirtualBox Machine"
-    open-maximized true
+    match app-id="Alacritty"
+    open-maximized false
 }
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
@@ -175,6 +180,9 @@ binds {
     Mod+Shift+WheelScrollUp        { focus-column-left; }
     Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
     Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
+    Mod+1 { focus-monitor "HDMI-A-1"; }
+    Mod+2 { focus-monitor "DP-2"; }
+    Mod+3 { focus-monitor "HDMI-A-2"; }
     Mod+Shift+1 { focus-workspace 1; }
     Mod+Shift+2 { focus-workspace 2; }
     Mod+Shift+3 { focus-workspace 3; }
